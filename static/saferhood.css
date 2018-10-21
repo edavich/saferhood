@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+.content {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: auto;
+  top: 150;
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 500px;
+  height: 400px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Karla', sans-serif;
+  padding-left: 5%;
+}
+
+/* 1. Links */
+.nav-wrapper a {
+  color: black;
+
+}
+
+.site-header{
+  display: flex;
+  flex-direction: row;
+}
+
+/* 3. Navigation*/
+.nav-wrapper{
+  padding-top: 32px;
+  width: 100%;
+}
+
+.nav {
+  list-style-type: none;
+  font-family: 'Karla', sans-serif;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+.slider{
+  margin: 0 auto;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.container {
+  position: fixed;
+  text-decoration: underline;
+}
+
+.pulltext {
+  padding-top: 520px;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  font-size: 26px;
+  padding-bottom: 15px;
+}
+
+.main {
+  background-color: #bedbbd;
+  text-align: center;
+  padding-top: 20px;
+  margin: 40px;
+  padding-bottom: 20px;
+}
+
+.main-text {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.mycontent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  justify-content: center;
+  display:flex;
+}
+
+#logo{
+  text-align: center;
+}
+
+#info{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#communities{
+  margin-left: 15%;
+  margin-right: 15%;
+}

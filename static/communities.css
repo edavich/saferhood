@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.content {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: auto;
+  top: 150;
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 500px;
+  height: 400px;
+}
+
+/* 1. Links */
+.nav-wrapper a {
+  color: black;
+
+}
+
+.site-header{
+  display: flex;
+  flex-direction: row;
+}
+
+/* 3. Navigation*/
+.nav-wrapper{
+  padding-top: 32px;
+  width: 100%;
+}
+
+.nav {
+  list-style-type: none;
+  font-family: 'Karla', sans-serif;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-top: -10px;
+}
