@@ -110,15 +110,15 @@ h3 {
 
 .grid-container {
   display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
   grid-template-columns: auto auto auto;
   padding: 10px;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: none;
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
@@ -129,4 +129,18 @@ h3 {
 #communities{
   margin-left: 15%;
   margin-right: 15%;
+}
+
+#button{
+    background-color: #df6e3e;
+    border: none;
+    color: white;
+    padding: 20px 75px 20px 75px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
 }
