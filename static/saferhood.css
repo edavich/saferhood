@@ -89,7 +89,6 @@ h3 {
 }
 
 .mycontent {
-  background-color: #bedbbd;
   display: flex;
   justify-content: space-evenly;
   bottom: 25px;
@@ -111,7 +110,7 @@ h3 {
 }
 
 #info{
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Karla', sans-serif;
    font-size: 18px;
 }
 
@@ -120,16 +119,19 @@ h3 {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-columns: auto auto auto;
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background-color: #eaeaea;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
-  padding: 10px;
+  margin-bottom: 6px;
   font-family: 'Open Sans', sans-serif;
 }
 
