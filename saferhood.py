@@ -45,7 +45,7 @@ def face():
                               stderr = subprocess.PIPE,
                               stdin=subprocess.PIPE)
     out, err = p.communicate()
-    return 0;
+    return "surveillance";
 
 
 if __name__ == '__main__':
