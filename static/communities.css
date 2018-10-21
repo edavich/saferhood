@@ -12,6 +12,14 @@
   height: 400px;
 }
 
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+  padding-left: 12%;
+  color: #df6e3e;
+}
+
 /* 1. Links */
 .nav-wrapper a {
   color: black;
