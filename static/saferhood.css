@@ -73,7 +73,6 @@ h3 {
 }
 
 .main {
-  background-color: #bedbbd;
   text-align: center;
   padding-top: 20px;
   margin: 40px;
@@ -92,19 +91,26 @@ h3 {
 .mycontent {
   display: flex;
   justify-content: space-evenly;
+  bottom: 25px;
+  position: relative;
 }
 
 .link {
   justify-content: center;
   display:flex;
 }
+.image-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 #logo{
   text-align: center;
 }
 
 #info{
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Karla', sans-serif;
    font-size: 18px;
 }
 
@@ -113,16 +119,19 @@ h3 {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-columns: auto auto auto;
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background-color: #eaeaea;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
-  padding: 10px;
+  margin-bottom: 6px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -135,12 +144,14 @@ h3 {
     background-color: #df6e3e;
     border: none;
     color: white;
-    padding: 20px 75px 20px 75px;
+  /* padding: 20px 75px 20px 75px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
     font-size: 14px;
     border-radius: 5px;
+    height:50px;
+    width:200px;
 }

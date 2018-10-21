@@ -12,19 +12,27 @@
   height: 400px;
 }
 
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+  padding-left: 12%;
+  color: #df6e3e;
+}
+
 /* 1. Links */
 .nav-wrapper a {
   color: black;
 
 }
 
-.site-header{
+.site-header {
   display: flex;
   flex-direction: row;
 }
 
 /* 3. Navigation*/
-.nav-wrapper{
+.nav-wrapper {
   padding-top: 32px;
   width: 100%;
 }
@@ -41,7 +49,7 @@
   font-size: 16px;
   margin-top: -10px;
 }
-.current{
+.current {
   width:65%;
   margin:auto;
   height:350px;
@@ -49,13 +57,13 @@
   position: relative;
   bottom: 20px;
 }
-.discussion{
+.discussion {
   width:75%;
   margin:auto;
   height:400px;
   /* background-color:black; */
 }
-.discussion-top{
+.discussion-top {
   font-family: 'Karla', sans-serif;
   font-size:20px;
   width:100%;
@@ -64,7 +72,7 @@
   line-height: 50px;
 
 }
-#logo{
+#logo {
   display: flex;
   justify-content: center;
 }
