@@ -6,6 +6,9 @@ app = Flask(__name__)
 def saferhood():
     return render_template("saferhood.html")
 
+@app.route('/communities')
+def communities():
+    return render_template("communities.html")
 
 if __name__ == '__main__':
     app.run()
