@@ -40,13 +40,12 @@ def responders():
 
 @app.route('/face')
 def face():
-    # live_rec.run()
     cmd = ['python3', 'live_rec.py']
     p = subprocess.Popen(cmd, stdout = subprocess.PIPE,
                               stderr = subprocess.PIPE,
                               stdin=subprocess.PIPE)
     out, err = p.communicate()
-    return "direct your attention to the video feed!"
+    return;
 
 
 if __name__ == '__main__':
