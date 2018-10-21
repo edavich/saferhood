@@ -73,7 +73,6 @@ h3 {
 }
 
 .main {
-  background-color: #bedbbd;
   text-align: center;
   padding-top: 20px;
   margin: 40px;
@@ -90,14 +89,22 @@ h3 {
 }
 
 .mycontent {
+  background-color: #bedbbd;
   display: flex;
   justify-content: space-evenly;
+  bottom: 25px;
+  position: relative;
 }
 
 .link {
   justify-content: center;
   display:flex;
 }
+.image-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 #logo{
   text-align: center;
@@ -135,12 +142,14 @@ h3 {
     background-color: #df6e3e;
     border: none;
     color: white;
-    padding: 20px 75px 20px 75px;
+  /* padding: 20px 75px 20px 75px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
     font-size: 14px;
     border-radius: 5px;
+    height:50px;
+    width:200px;
 }
