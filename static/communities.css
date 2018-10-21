@@ -41,3 +41,34 @@
   font-size: 16px;
   margin-top: -10px;
 }
+.current{
+  width:65%;
+  margin:auto;
+  height:350px;
+  background-color:black;
+  position: relative;
+  bottom: 20px;
+}
+.discussion{
+  width:75%;
+  margin:auto;
+  height:400px;
+  /* background-color:black; */
+}
+.discussion-top{
+  font-family: 'Karla', sans-serif;
+  font-size:20px;
+  width:100%;
+  height:50px;
+  border-bottom: solid 1px black;
+  line-height: 50px;
+
+}
+#logo{
+  display: flex;
+  justify-content: center;
+}
+iframe{
+  width:100% !important;
+  height:100% !important;
+}
