@@ -29,7 +29,14 @@ def AnalyzeFeed(faces):
     known_face_encodings = [face.encoding for face in faces]
     known_face_names = [face.name for face in faces]
 
-    print("Starting loop")
+    print("Starting")
+    font_color = (255, 255, 255) # (white)
+    red_font_color = (0, 0, 255) # (red)
+    font = cv2.FONT_HERSHEY_DUPLEX
+
+    hot_names = ["Trump", "Biden", "matt link"]
+    displayed_names = []
+    found_names = []
 
     while True:
         # Get the current frame
@@ -37,7 +44,6 @@ def AnalyzeFeed(faces):
 
         # Resize frame to 1/4 size for faster processing
         small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
-        # small_frame = frame
 
         # Convert the image from OpenCV BGR color to RGB color use by face_recognition
         rgb_small_frame = small_frame[:, :, ::-1]
@@ -61,6 +67,19 @@ def AnalyzeFeed(faces):
 
                 face_names.append(name)
 
+                if name in hot_names:
+                    found_names.append(name)
+
+                if len(found_names) > 0:
+                    for i in range(len(found_names)):
+                        if found_names[i] not in displayed_names:
+                            displayed_names.append(found_names[i])
+
+                if len(displayed_names) > 0:
+                    cv2.putText(frame, "ALERT:", (2, 30), font, 1.0, red_font_color, 1)
+                for i in range(len(displayed_names)):
+                    cv2.putText(frame, displayed_names[i], (25, i * 30 + 65), font,  1.0, red_font_color, 1)
+
         process_this_frame = not process_this_frame
 
 
@@ -73,13 +92,11 @@ def AnalyzeFeed(faces):
             left *= 4
 
             # Outline face with box
-            outline_color = (0, 0, 225)
+            outline_color = (255, 0, 0)
             cv2.rectangle(frame, (left, top), (right, bottom), outline_color, 2)
 
             # Label the box with the name of the face
-            font_color = (255, 255, 255) # (white)
             cv2.rectangle(frame, (left, bottom - 35), (right, bottom), outline_color, cv2.FILLED)
-            font = cv2.FONT_HERSHEY_DUPLEX
             cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, font_color, 1)
 
         # Display the image
